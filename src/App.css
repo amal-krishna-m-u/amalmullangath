@@ -74,7 +74,7 @@ body
   position: fixed;
   display: flex;
   top: 0;
-  width: 97%;
+  width: 95%;
   background-color: #0b0c10;
   padding: 1.3em;
   z-index: 1000; /* Ensure the navigation stays above other content */
@@ -230,7 +230,7 @@ img {
 
   max-width: 10em;
   display: block;
-  margin: 6em auto; /* This will center the image horizontally */
+  margin: 8em auto; /* This will center the image horizontally */
 border-radius: 3em;
 border: #0b0c10;
 /* Adjust the values based on your preference */
