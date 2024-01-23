@@ -62,15 +62,19 @@ body, html {
   background-color: #0b0c10;
   color: #c5c6c7;
   margin: 0;
-  padding: 1em;
+  
   font-family: 'Josefin Sans', sans-serif;
 }
 
+body
+{
+  padding: 1em;
+}
 .wrapper {
   position: fixed;
   display: flex;
   top: 0;
-  width: 91%;
+  width: 97%;
   background-color: #0b0c10;
   padding: 1.3em;
   z-index: 1000; /* Ensure the navigation stays above other content */
@@ -226,7 +230,7 @@ img {
 
   max-width: 10em;
   display: block;
-  margin: 3em auto; /* This will center the image horizontally */
+  margin: 6em auto; /* This will center the image horizontally */
 border-radius: 3em;
 border: #0b0c10;
 /* Adjust the values based on your preference */

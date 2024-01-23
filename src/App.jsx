@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import DisplayProfile from './assets/dp.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,7 @@ function App() {
         <a href='https://www.amalmullangath.tech/' className='logo'>Amal Krishna M U </a>
         <nav>
           <ul>
-           <li><a href='https://www.amalmullangath.tech/#/its'> Home</a></li>
+           <li><a href='https://www.amalmullangath.tech/'> Home</a></li>
             <li><a href='#about'> About</a></li>
             <li><a href='#projects'> Projects</a></li>
           </ul>
@@ -20,7 +21,7 @@ function App() {
       </header>
       <div id='home'>
 
-        {/* <img src={dp} alt='profile picture' />  */}
+        <img src={DisplayProfile} alt='profile picture' /> 
   
         </div>
 
