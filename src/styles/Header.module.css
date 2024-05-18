@@ -16,15 +16,8 @@
     list-style: none;
     display: flex;
     gap: 15px;
-}
-
-.navLinks ul {
+    margin: 0;
     padding: 0;
-    margin: 0;
-}
-
-.navLinks li {
-    margin: 0;
 }
 
 .navLinks a {
