@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>My Portfolio</div>
+      <div className={styles.logo}>Amal Mullangath</div>
       <button className={styles.menuToggle} onClick={toggleMenu}>
         &#9776;
       </button>

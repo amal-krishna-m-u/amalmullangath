@@ -36,3 +36,10 @@
 .service p {
     margin: 10px 0;
 }
+.socialLink img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 12px;
+}
