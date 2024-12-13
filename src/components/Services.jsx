@@ -24,7 +24,7 @@ const Services = () => (
         </a>
       </div>
 
-      <div className={styles.service}>
+      {/* <div className={styles.service}>
         <h3 className={styles.serviceTitle}>Custom WhatsApp Bot (AI Driven)</h3>
         <p className={styles.serviceDescription}>
           Developing AI-driven WhatsApp bots to automate tasks and enhance
@@ -41,7 +41,7 @@ const Services = () => (
             <img src="/messageme.svg" alt="send message" />
           </div>
         </a>
-      </div>
+      </div> */}
 
       <div className={styles.service}>
         <h3 className={styles.serviceTitle}>Web Application Development</h3>
