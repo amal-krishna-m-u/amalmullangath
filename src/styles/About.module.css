@@ -1,15 +1,3 @@
-/* About.module.css */
-:root {
-    --amazon-yellow: #ff9900;
-    --deep-blue: #232f3e;
-    --light-gray: #f2f2f2;
-    --white: #ffffff;
-    --accent-green: #00a859;
-    --font-family: "Roboto", sans-serif;
-    --heading-font-size: 2.5em;
-    --paragraph-font-size: 1.2em;
-}
-
 .about {
     background: linear-gradient(135deg, var(--light-gray), var(--white));
     padding: 60px 20px;
@@ -22,7 +10,7 @@
 .about h2 {
     font-size: var(--heading-font-size);
     margin-bottom: 20px;
-    color: var(--amazon-yellow);
+    color: var(--primary-color);
 }
 
 .about p {
@@ -30,7 +18,7 @@
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.6;
-    color: var(--deep-blue);
+    color: var(--text-color);
 }
 
 .about p strong {

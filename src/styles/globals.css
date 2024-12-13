@@ -1,4 +1,6 @@
 /* globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
 :root {
     --primary-color: #ff9900; /* Amazon Yellow */
     --secondary-color: #232f3e; /* Deep Blue */
@@ -6,9 +8,10 @@
     --background-color: #f2f2f2; /* Light Gray */
     --text-color: #333333; /* Dark Text */
     --white: #ffffff;
-    --font-family: "Roboto", sans-serif;
+    --font-family: "Fjalla One", sans-serif;
     --button-padding: 12px 24px;
-    --heading-font-size: 3em;
+    --heading-font-size: 2.8em;
+    --subheading-font-size: 2em;
     --paragraph-font-size: 1.2em;
 }
 

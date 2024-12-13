@@ -5,46 +5,86 @@
     justify-content: space-between;
     align-items: center;
     color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
+    color: var(--white);
 }
 
-.navLinks {
-    list-style: none;
+.settings {
+    position: relative;
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
+    align-items: center;
 }
 
-.navLinks a {
-    color: var(--white);
-}
-
-.menuToggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    color: var(--white);
+.settingsIcon {
+    width: 30px;
+    height: 30px;
+    color: var(--white); /* Default color */
     cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.settingsIcon:hover {
+    color: var(--accent-green); /* Dark green on hover */
+    transform: rotate(15deg); /* Subtle rotation on hover */
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.dropdownMenu a {
+    padding: 10px 20px;
+    color: var(--text-color); /* Dark text */
+    text-decoration: none;
+    font-weight: 500;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+    text-align: left;
+}
+
+.dropdownMenu a:hover {
+    background-color: var(--primary-color); /* Highlight on hover */
+    color: var(--white);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
-    .navLinks {
-        flex-direction: column;
-        align-items: center;
-        display: none;
+    .settingsIcon {
+        width: 25px;
+        height: 25px;
     }
 
-    .menuToggle {
-        display: block;
-    }
-
-    .navLinks.show {
-        display: flex;
+    .dropdownMenu a {
+        font-size: 0.9em;
     }
 }

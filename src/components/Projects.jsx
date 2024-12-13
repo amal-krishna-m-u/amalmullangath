@@ -1,45 +1,42 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "../styles/Projects.module.css";
 
 const projects = [
   {
-    title: "Mind Corner",
-    description:
-      "A web-based system to assess students' mental health using various psychological tools. Developed for the psychology division of KMM College of Arts and Science, the project is currently in its feasibility study, requirement gathering, and tool selection stages.",
-    imageUrl: "/image/mindcorner.jpeg",
-    link: "/",
-  },
-  {
     title: "StethoConnect",
     description:
-      "A telemedicine initiative introducing an economical digital stethoscope solution for medical students. It enables preliminary medical examinations with the help of affordable digital stethoscopes and remote medical professionals. The project involved front-end development, hosting, and configuring the Raspberry Pi interface for data collection and transmission.",
+      "A low-cost digital stethoscope enabling remote diagnostics for medical students. Built with React, Flask, and Raspberry Pi, delivering an affordable telemedicine solution under a 5000 INR budget.",
     imageUrl: "/image/stethoconnect.jpeg",
-    link: "https://github.com/StethoConnect",
+    link: "https://github.com/stethoconnect",
   },
   {
     title: "TeamOne Event Management",
     description:
-      "A Flutter Android application developed for TeamOne Event Management, automating billing, rental stock management, and employee management systems. The project includes two mobile applications for employees and coordinators/admins, increasing event coordinators' efficiency by 100%.",
+      "Flutter-based mobile apps for automating event management operations, increasing efficiency by 100%. Deployed on the Amazon App Store for employees and coordinators.",
     imageUrl: "/image/teamone.jpeg",
     link: "https://www.amazon.com/gp/product/B0CH4ZBF1D",
   },
-  // Add more projects as needed
+  {
+    title: "Invoice Generator",
+    description:
+      "Web-based tool for invoice generation with GST support. Built with React.js for a seamless user experience and deployed on Netlify.",
+    imageUrl: "/image/invoicegenerator.webp",
+    link: "https://invoice-gst-generator.netlify.app",
+  },
+  {
+    title: "ClipIt v01",
+    description:
+      "An intuitive clipboard management tool to enhance productivity. Built with React.js and deployed for streamlined use.",
+    imageUrl: "/image/clipit.webp",
+    link: "https://github.com/amal-krishna-m-u/clipit",
+  },
 ];
 
 const Projects = () => {
   return (
     <section id="projects" className={styles.projects}>
-      <h2>Projects</h2>
-      <Carousel
-        showThumbs={false}
-        showStatus={false}
-        autoPlay={true}
-        interval={5000}
-        infiniteLoop={true}
-        showIndicators={false}
-      >
+      <h2 className={styles.heading}>Projects</h2>
+      <div className={styles.grid}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
             <div className={styles.imageContainer}>
@@ -48,18 +45,22 @@ const Projects = () => {
                 alt={project.title}
                 className={styles.projectImage}
               />
-              <div className={styles.gradientOverlay}></div>
             </div>
-            <div className={styles.projectDetails}>
+            <div className={styles.projectContent}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.viewButton}
+              >
                 View Project
               </a>
             </div>
           </div>
         ))}
-      </Carousel>
+      </div>
     </section>
   );
 };
