@@ -14,7 +14,7 @@ const Header = () => {
   const hideMenu = () => {
     menuTimeout = setTimeout(() => {
       setIsMenuVisible(false);
-    }, 200); // Delay before hiding the menu
+    }, 10); // Delay before hiding the menu
   };
 
   return (
