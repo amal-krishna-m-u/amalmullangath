@@ -1,9 +1,15 @@
+/* globals.css */
 :root {
-    --primary-color: #0070f3;
-    --secondary-color: #005bb5;
-    --background-color: #f0f0f0;
-    --text-color: #333333;
+    --primary-color: #ff9900; /* Amazon Yellow */
+    --secondary-color: #232f3e; /* Deep Blue */
+    --accent-green: #00a859; /* Accent Green */
+    --background-color: #f2f2f2; /* Light Gray */
+    --text-color: #333333; /* Dark Text */
     --white: #ffffff;
+    --font-family: "Roboto", sans-serif;
+    --button-padding: 12px 24px;
+    --heading-font-size: 3em;
+    --paragraph-font-size: 1.2em;
 }
 
 * {
@@ -14,7 +20,7 @@
 
 body {
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
@@ -42,6 +48,11 @@ a:hover {
 
 button {
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 .container {
@@ -53,6 +64,17 @@ button {
 section {
     padding: 60px 20px;
     text-align: center;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--white);
 }
 
 @media (max-width: 768px) {

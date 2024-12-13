@@ -1,3 +1,15 @@
+/* Home.module.css */
+:root {
+    --primary-color: #ff9900; /* Amazon Yellow */
+    --secondary-color: #232f3e; /* Deep Blue */
+    --accent-green: #00a859; /* Accent Green */
+    --white: #ffffff;
+    --font-family: "Roboto", sans-serif;
+    --button-padding: 12px 24px;
+    --heading-font-size: 3em;
+    --paragraph-font-size: 1.2em;
+}
+
 .home {
     display: flex;
     justify-content: center;
@@ -11,35 +23,55 @@
         var(--secondary-color)
     );
     color: var(--white);
+    font-family: var(--font-family);
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .home h1 {
-    font-size: 3em;
+    font-size: var(--heading-font-size);
     margin-bottom: 20px;
+    color: var(--white);
 }
 
 .home p {
     margin-top: 1.5rem;
-    font-size: 1.2em;
-    max-width: 600px;
-    text-align: center;
+    font-size: var(--paragraph-font-size);
+    max-width: 800px;
+    color: var(--white);
 }
 
 .home button {
     background-color: var(--white);
     color: var(--primary-color);
     border: none;
-    padding: 10px 20px;
+    padding: var(--button-padding);
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 1.2em;
     transition:
         background-color 0.3s,
-        color 0.3s;
+        color 0.3s,
+        transform 0.3s;
+    cursor: pointer;
 }
 
 .home button:hover {
     background-color: var(--secondary-color);
     color: var(--white);
+    transform: scale(1.1);
+}
+
+.home a {
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -49,5 +81,10 @@
 
     .home p {
         font-size: 1em;
+    }
+
+    .home button {
+        font-size: 1em;
+        padding: 10px 20px;
     }
 }
