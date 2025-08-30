@@ -34,18 +34,17 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className={styles.projects}>
-      <h2 className={styles.heading}>Projects</h2>
+      <h2>Projects</h2>
       <div className={styles.grid}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
-            <div className={styles.imageContainer}>
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className={styles.projectImage}
-              />
-            </div>
-            <div className={styles.projectContent}>
+            <img
+              src={project.imageUrl}
+              alt={project.title}
+              className={styles.projectImage}
+              loading="lazy"
+            />
+            <div className={styles.overlay}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <a
