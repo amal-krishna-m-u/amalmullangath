@@ -1,10 +1,8 @@
 .about {
-    background: linear-gradient(135deg, var(--light-gray), var(--white));
-    padding: 60px 20px;
-    font-family: var(--font-family);
-    color: var(--deep-blue);
+    background: var(--white);
+    padding: 80px 20px;
+    color: var(--text-color);
     text-align: center;
-    border-radius: 10px;
 }
 
 .about h2 {
@@ -17,12 +15,11 @@
     font-size: var(--paragraph-font-size);
     max-width: 900px;
     margin: 0 auto;
-    line-height: 1.6;
-    color: var(--text-color);
+    line-height: 1.8;
 }
 
 .about p strong {
-    color: var(--accent-green);
+    color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {

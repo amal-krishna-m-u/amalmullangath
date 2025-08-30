@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/Contact.module.css";
 
 const Contact = () => {
@@ -6,12 +5,12 @@ const Contact = () => {
     <section id="contact" className={styles.contact}>
       <h2>Contact Me</h2>
       <p className={styles.description}>
-        Let's connect! Reach out to discuss your next project or for any
+        Let&apos;s connect! Reach out to discuss your next project or for any
         collaboration opportunities.
       </p>
       <div className={styles.socialLinks}>
         <a
-          href="https://wa.me/918848263313?text=I'm%20interested%20in%20your%20services%20"
+          href="https://wa.me/918848263313?text=I%27m%20interested%20in%20your%20services%20"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.socialLink}

@@ -1,29 +1,15 @@
 /* Home.module.css */
-:root {
-    --primary-color: #ff9900; /* Amazon Yellow */
-    --secondary-color: #232f3e; /* Deep Blue */
-    --accent-green: #00a859; /* Accent Green */
-    --white: #ffffff;
-    --font-family: "Roboto", sans-serif;
-    --button-padding: 12px 24px;
-    --heading-font-size: 3em;
-    --paragraph-font-size: 1.2em;
-}
 
 .home {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
-    line-height: 2rem;
-    background: linear-gradient(
-        135deg,
-        var(--primary-color),
-        var(--secondary-color)
-    );
+    padding: 0 20px;
+    gap: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
-    font-family: var(--font-family);
     text-align: center;
     animation: fadeIn 2s ease-out;
 }
@@ -38,36 +24,32 @@
 }
 
 .home h1 {
-    font-size: var(--heading-font-size);
-    margin-bottom: 20px;
-    color: var(--white);
+    font-size: 3em;
+    font-weight: 600;
+    margin: 0;
 }
 
 .home p {
-    margin-top: 1.5rem;
-    font-size: var(--paragraph-font-size);
+    font-size: 1.2em;
     max-width: 800px;
-    color: var(--white);
+    line-height: 1.6;
 }
 
 .home button {
-    background-color: var(--white);
-    color: var(--primary-color);
+    background-color: var(--accent-green);
+    color: var(--white);
     border: none;
     padding: var(--button-padding);
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition:
-        background-color 0.3s,
-        color 0.3s,
-        transform 0.3s;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
     cursor: pointer;
 }
 
 .home button:hover {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    transform: scale(1.1);
+    background-color: var(--white);
+    color: var(--accent-green);
+    transform: scale(1.05);
 }
 
 .home a {
@@ -76,7 +58,7 @@
 
 @media (max-width: 768px) {
     .home h1 {
-        font-size: 2em;
+        font-size: 2.5rem;
     }
 
     .home p {
@@ -85,6 +67,5 @@
 
     .home button {
         font-size: 1em;
-        padding: 10px 20px;
     }
 }

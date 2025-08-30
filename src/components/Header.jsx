@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { SquareTerminal } from "lucide-react"; // Import the SquareTerminal icon
 import styles from "../styles/Header.module.css";
 

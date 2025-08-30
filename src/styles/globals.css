@@ -1,14 +1,14 @@
 /* globals.css */
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 :root {
-    --primary-color: #ff9900; /* Amazon Yellow */
-    --secondary-color: #232f3e; /* Deep Blue */
-    --accent-green: #00a859; /* Accent Green */
-    --background-color: #f2f2f2; /* Light Gray */
-    --text-color: #333333; /* Dark Text */
+    --primary-color: #0f172a; /* Dark navy */
+    --secondary-color: #3b82f6; /* Vibrant blue */
+    --accent-green: #14b8a6; /* Teal accent */
+    --background-color: #f8fafc; /* Near white */
+    --text-color: #1e293b; /* Slate */
     --white: #ffffff;
-    --font-family: "Fjalla One", sans-serif;
+    --font-family: "Poppins", sans-serif;
     --button-padding: 12px 24px;
     --heading-font-size: 2.8em;
     --subheading-font-size: 2em;
@@ -40,13 +40,13 @@ h6 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-green);
 }
 
 button {
