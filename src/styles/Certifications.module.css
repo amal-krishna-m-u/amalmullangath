@@ -45,14 +45,47 @@
     margin-bottom: 8px;
 }
 
-.certCard a {
-    font-size: 1em;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+/* Icon styling */
+.icon {
+    width: 40px;
+    height: 40px;
+    color: var(--accent-green);
+    margin-bottom: 10px;
 }
 
-.certCard a:hover {
-    color: var(--accent-green);
+/* Button group */
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button,
+.buttonSecondary {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    color: var(--white);
+}
+
+.button {
+    background-color: var(--primary-color);
+}
+
+.button:hover {
+    background-color: var(--accent-green);
+}
+
+.buttonSecondary {
+    background-color: var(--secondary-color);
+}
+
+.buttonSecondary:hover {
+    background-color: var(--accent-green);
 }
