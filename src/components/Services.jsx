@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../styles/Services.module.css";
 
 const Services = () => (
@@ -13,7 +12,7 @@ const Services = () => (
           runs smoothly on both platforms.
         </p>
         <a
-          href="https://wa.me/918848263313?text=I'm%20interested%20in%20your%20App%20Development%20service%20"
+          href="https://wa.me/918848263313?text=I%27m%20interested%20in%20your%20App%20Development%20service%20"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -50,7 +49,7 @@ const Services = () => (
           with a focus on performance, usability, and scalability.
         </p>
         <a
-          href="https://wa.me/918848263313?text=I'm%20interested%20in%20your%20Web%20Development%20service%20"
+          href="https://wa.me/918848263313?text=I%27m%20interested%20in%20your%20Web%20Development%20service%20"
           target="_blank"
           rel="noopener noreferrer"
         >

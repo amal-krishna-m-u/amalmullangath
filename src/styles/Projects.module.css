@@ -1,22 +1,13 @@
-:root {
-    --primary-color: #ff9900; /* Amazon yellow */
-    --deep-blue: #232f3e;
-    --white: #ffffff;
-    --text-gray: #666666;
-    --accent-green: #00a859;
-    --font-family: "Roboto", sans-serif;
+.projects {
     --border-radius: 10px;
     --shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.projects {
-    background-color: var(--white);
+    background-color: var(--background-color);
     padding: 80px 20px;
 }
 
 .projects h2 {
     font-size: 2.8em;
-    color: var(--deep-blue);
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 40px;
 }
@@ -36,9 +27,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projectCard:hover {
@@ -67,13 +56,13 @@
 }
 
 .projectContent h3 {
-    color: var(--deep-blue);
+    color: var(--primary-color);
     font-size: 1.5em;
     margin: 0;
 }
 
 .projectContent p {
-    color: var(--text-gray);
+    color: var(--text-color);
     line-height: 1.5;
     font-size: 1em;
     margin: 0;
@@ -83,7 +72,7 @@
     align-self: start;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white);
     text-decoration: none;
     font-size: 1em;

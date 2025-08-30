@@ -1,10 +1,10 @@
 .contact {
-    background-color: var(--white);
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 20px;
-    font-family: var(--font-family);
+    padding: 80px 20px;
+    text-align: center;
 }
 
 .contact h2 {
@@ -16,8 +16,7 @@
 .description {
     font-size: var(--paragraph-font-size);
     color: var(--text-color);
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .socialLinks {
@@ -33,27 +32,20 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.1em;
-    font-weight: bold;
-    transition:
-        color 0.3s,
-        transform 0.3s;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .socialLink:hover {
     color: var(--accent-green);
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 .socialLink img {
     width: 40px;
     height: 40px;
-    transition: transform 0.3s;
-}
-
-.socialLink img:hover {
-    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
