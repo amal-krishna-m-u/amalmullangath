@@ -1,12 +1,33 @@
+import { useEffect, useState } from "react";
 import styles from "../styles/Contact.module.css";
 
+const suggestions = [
+  "Let's build something great together!",
+  "Need help with a web or mobile app?",
+  "Looking to collaborate on a project?",
+  "Have an idea to discuss?"
+];
+
 const Contact = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % suggestions.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="contact" className={styles.contact}>
       <h2>Contact Me</h2>
       <p className={styles.description}>
         Let&apos;s connect! Reach out to discuss your next project or for any
         collaboration opportunities.
+      </p>
+      <p key={current} className={styles.suggestion}>
+        {suggestions[current]}
       </p>
       <div className={styles.socialLinks}>
         <a

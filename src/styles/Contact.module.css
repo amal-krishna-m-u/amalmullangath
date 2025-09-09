@@ -19,6 +19,14 @@
     margin-bottom: 40px;
 }
 
+.suggestion {
+    font-size: var(--paragraph-font-size);
+    color: var(--accent-green);
+    margin-bottom: 30px;
+    height: 1.5em;
+    animation: fadeIn 1s ease-in-out;
+}
+
 .socialLinks {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +54,30 @@
 .socialLink img {
     width: 40px;
     height: 40px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
